@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joanne | Ultra Modern Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;900&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0f0f0f, #1f1f1f);
+      color: white;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      font-size: 4rem;
+      font-weight: 900;
+      margin-bottom: 1rem;
+      background: linear-gradient(90deg, #00ffe7, #00b4d8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    p {
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: #ccc;
+      max-width: 600px;
+      text-align: center;
+      margin-bottom: 2rem;
+      animation: fadeInUp 1.2s ease-out;
+    }
+
+    .cta {
+      padding: 1rem 2rem;
+      border: none;
+      background-color: #00b4d8;
+      color: white;
+      font-size: 1rem;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      animation: fadeIn 1.5s ease-out;
+    }
+
+    .cta:hover {
+      background-color: #009cb6;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Hello, I'm Joanne</h1>
+  <p>Welcome to my digital space. I'm passionate about innovation, design, and future-forward technologies. Let's connect!</p>
+  <button class="cta" onclick="alert('Let’s collaborate soon!')">Say Hello</button>
+
+  <!-- Simli Widget -->
+  <simli-widget 
+    token="gAAAAABobZ558OGDNe3b3t1831gk44drHbAOzrftc_7jYwEYQN__uG3jHGfIBtIHqz1m8fqsQPxCZkUmHflItEKUyGqZMEbuGWF12cYJL2Y0J6Ajmw2ovGuxH9Gfer5XSbjp3L4oAMDpuekAmKW_38Wh7zYzmkWalWy-vYI9lc8DYHH-xd4emv9pfK7NpCabrEAIOKyIFZC1ECR6l62oeeqAA2rCtzhh-jTORRhMP0f9Oiev0MrJ_23HiVQceDQux-osg0gXnq9ce2m4JY0c2mU6koOwNTDfhgBJ-hMwD3tv49OCBDk1SAyAMi15hhDYmh5Gp_TtPf9XT4wdPon8jbaZMn0nfpRgKiPnXpJoNVP49P0CAyibfS-hEpzzaU09WnafaBvXFwSuVU-27WR_G8qfQLVFjZguRg==" 
+    agentid="12e7d05c-1fcf-41b3-8a9a-daaf9b5ff25a" 
+    position="right" 
+    customimage="https://www.svgrepo.com/show/395791/astronaut-light-skin-tone.svg" 
+    customtext="Joanne">
+  </simli-widget>
+  <script src="https://app.simli.com/simli-widget/index.js" async type="text/javascript"></script>
+
+</body>
+</html>
